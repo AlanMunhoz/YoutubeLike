@@ -3,6 +3,13 @@ import 'package:flutter/material.dart';
 class CustomSearchDelegate extends SearchDelegate<String> {
 
   @override
+  ThemeData appBarTheme(BuildContext context) {
+    return ThemeData(
+        colorScheme: const ColorScheme.dark()
+    );
+  }
+
+  @override
   List<Widget>? buildActions(BuildContext context) {
     return [
       IconButton(
